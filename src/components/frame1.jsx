@@ -12,10 +12,11 @@ function Frame1(){
 
     return(
         <div className="frame1">
-                <h1 className="l-font">DIGITAL</h1><img className="h-line" src={line}/><br/>
-                <h1 className="xxxl-font">MARK</h1><br/>
-                <p className="para-1">Static and dynamic secure code review can prevent a day before your product is even released. We can integrate with your dev environment</p>
+                <h1 className="l-font inline">DIGITAL</h1><img className="h-line" src={line}/><br/>
+                <h1 className="xxxl-font ">MARK</h1><br/>
                 <h1 className="xxxl-font tab">ETING</h1><br/>
+                <p className="para-1">Static and dynamic secure code review can prevent a day before your product is even released. We can integrate with your dev environment</p>
+                
                 <div className="banner1">
                     <img className="bannerimg" src={banner}/>
                 </div>

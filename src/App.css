@@ -3,12 +3,14 @@ body{
   font-family: "Kanit", serif;
   font-style: normal;
   margin: 0px;
+  overflow-x: auto;
+  overflow-y: scroll;
 }
 .navbar{
   width: 100%;
   position: fixed;
   display: inline;
-  z-index: 100;
+  z-index: 500;
   background-color: white;
   .nav-logo{
     padding: 20px;
@@ -84,6 +86,12 @@ body{
 .circle-div{
   border-radius:50%;
 }
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
 .main-content{
 }
 .sliderBtnN{
@@ -111,13 +119,16 @@ body{
     vertical-align: top;
     padding: 5px 0px 0px 20px;
   }
+  .tab{
+    margin-left: 40%;
+  }
   .para-1{
     width:330px;
     font-size: 18px;
     display: inline-block;
     margin-right: 100px;
     float: left;
-    margin-top: 40px;
+    margin-top: -200px;
   }
   .banner1{
     width: 1050px;
@@ -125,7 +136,7 @@ body{
     padding: 0px;
     float: right;
     margin-right: -80px;
-    margin-top:-60px;
+    margin-top:-90px;
     z-index: -1;
     .bannerimg{
       width: 1050px;
@@ -297,5 +308,769 @@ body{
         }
       }
     }
+  }
+}
+.frame5{
+  padding:250px 80px;
+  padding-bottom: 400px;
+  .sliderBtnN{
+    font-style: bold;
+    font-size: 30px;
+    font-weight: 800;
+    width:50px;
+    height: 50px;
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 60px;
+    margin-left:370px;
+  }
+  .sliderBtnN:hover{
+    background-color: black;
+    color: white;
+  }
+  .sliderBtnP{
+    font-style: bold;
+    font-size: 30px;
+    font-weight: 800;
+    width:50px;
+    height: 50px;
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 393px;
+    margin-left:300px;
+  }
+  .sliderBtnP:hover{
+    background-color: black;
+    color: white;
+  }
+  .slide-content{
+    width: 800px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    .slider{
+      padding: 50px;
+    }
+    .container{
+      .text{
+        font-style: italic;
+        font-size: 26px;
+        width: 680px;
+        padding: 20px;
+      }
+      .name{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .title{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .ss1{
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 100px;
+  }
+  .ss2{
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 800px;
+  }
+  .ss3{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -20px;
+  }
+  .ss4{
+    position: absolute;
+    margin-top: 00px;
+    margin-left: 0px;
+    display: none;
+  }
+  .ss5{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 0px;
+  }
+  .ss6{
+    position: absolute;
+    margin-top: 300px;
+    left: 1100px;
+  }
+}
+.frame6{
+  width: 600%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  .panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .panel.align-top {
+    align-items: flex-start;
+  }
+}
+.frame7{
+  background-color: rgb(218, 204, 204);
+  padding: 50px 80px;
+  hr{
+    border: 1px solid black;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .col{
+      width: 100%;
+      padding: 20px;
+      .hide-show-tab{
+        width: 80%;
+        font-size: 18px;
+        font-weight: 400;
+        .tab{
+          .tab-title{
+            display: inline;
+            cursor: pointer;
+
+          }
+          .show-hide-icon{
+            float: right;
+            font-size: 20px;
+            vertical-align: middle;
+          }
+          .tab-detail{
+            color: rgb(70, 70, 70);
+          }
+        }
+      }
+      .card{
+        margin-bottom: 50px;
+        border-radius: 20px;
+        width: 70%;
+        padding: 20px 50px 20px 150px;
+        cursor: pointer;
+        .deal-span{
+          font-size: 12px;
+          width: fit-content;
+          position: absolute;
+          margin-top: -30px;
+          margin-left: 27%;
+          padding: 5px;
+          border-radius: 5px;
+        }
+        .time-span{
+          color:  rgb(146, 146, 146);
+          border-radius: 5px;
+          border: 0.5px solid rgb(146, 146, 146);
+          padding: 5px;
+          width: fit-content;
+          font-size: 12px;
+        }
+        .price-span{
+          position: absolute;
+          margin-left: 25%;
+          margin-top: 0px;
+        }
+        .offer-span{margin-top: 30px;}
+        .detail-span{width: 80%; color:  rgb(146, 146, 146);}
+        .check-span{
+          width: 30px;
+          height: 30px;
+          padding: 10px;
+          text-align: center;
+          font-size: 25px;
+          line-height: 27px;
+          font-weight: 800;
+          border-radius: 5px;
+          position: absolute;
+          margin-top: -8%;
+          margin-left: -8%;
+          color: black;
+        }
+      }
+      .card:hover{
+        padding:30px 60px 30px 160px;
+      }
+      .try-span{
+        border: 0.5px solid rgb(0, 0, 0);
+        width: 200px;
+        height: 200px;
+        p{margin: 65px;}
+      }
+      .try-span:hover{
+        transform: scale(1.2)
+      }
+    }
+  }
+}
+.black{
+  background-color: black;
+  color: white;
+}
+.coral{
+  background-color: coral;
+  color: white ;
+}
+.white{
+  background-color: white;
+  color: black;
+}
+.frame8{
+  padding:50px 80px;
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    .col-1{
+      border-right: 0.5px solid black;
+      width: 450px;
+      padding: 200px 50px 50px 0px;
+    }
+    .col-2{
+      width: 450px;
+      padding: 400px 0px 50px 30px;
+      p{
+        font-size: 18px;
+        width: 400px;
+      }
+    }
+  }
+  .banner-1{
+    width: 400px;
+    position: absolute;
+    margin-top: 100px;
+    left: 31%;
+    background-color: white;
+    padding: 50px;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+   .content{
+    padding: 50px;
+      display: inline;
+      .card{
+        background-color: rgb(255, 255, 255);
+        width: 300px;
+        height: fit-content;
+        padding: 30px;
+        position: absolute;
+        margin-left: 10%;
+        margin-top: 11%;
+        z-index: 100;
+        .body{
+          margin-top: 10px;
+          margin-bottom: 40px;
+          font-size: 28px;
+          line-height: 26px;
+          font-weight: 500;
+          width: 80%;
+        }
+        .head{
+          color: rgb(70, 70, 70);
+          margin-bottom: 5px;
+        }
+        .foot{
+          color: rgb(70, 70, 70);
+        }
+      }
+      img{
+        width: 250px;
+        height: 450px;
+        object-fit: cover;
+        background-color: blueviolet;
+      }
+    }
+  }
+}
+.frame9{
+  background-color: black;
+  color: white;
+  .grid-container{
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    .col-1{
+      padding: 50px;
+      border-bottom: 1px solid rgb(70, 70, 70);
+      p{
+        color: rgb(128, 128, 128);
+        width: 62%;
+      }
+    }
+    .col-2{
+      text-align: center;
+      p{
+        padding:20px 20px 20px 20px;
+        border: 1px solid rgb(70, 70, 70);
+        margin: 0px;
+      }
+    }
+    .col-3{
+      padding: 100px 50px;
+      border-bottom: 1px solid rgb(70, 70, 70);
+      text-align: center;
+    }
+  }
+  .footer{
+    padding: 50px;
+    .footer-text{
+      width: 220px;
+    }
+    .footer-nav-bar{
+      float: right;
+      margin-top: 0px;
+      span{
+        padding: 20px;
+      }
+    }
+  }  
+}
+@media screen and (max-width:600px){
+  .xxxl-font{
+    font-size: 140px;
+    line-height: 100px;
+    font-weight: 500;
+    margin: 0px;
+  }
+  .xxl-font{
+    font-family: "Kanit", serif;
+    font-style: normal;
+    font-size: 73px;
+    line-height: 80px;
+    font-weight: 450;
+    margin: 0px;
+  }
+  .xl-font{
+    font-family: "Kanit", serif;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .l-font{
+    font-family: "Kanit", serif;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 26px;
+    font-weight: 500;
+    margin: 0px;
+    width: 300px;
+  }
+  .m-font{
+    font-family: "Kanit", serif;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .sliderBtnN{
+    width: 15%;
+    margin-top: -105%;
+    margin-left: 92%;
+  }
+  .sliderBtnP{
+    width: 15%;
+    margin-top: 77%;
+  }
+  .navbar{
+    width: 100%;
+    position: sticky;
+    display: inline;
+    z-index: 500;
+    background-color: white;
+    .nav-logo{
+      padding: 20px;
+      vertical-align: middle;
+    }
+    .navbar-link{
+      display: inline;
+      margin-left: 20%;
+      li{
+        display: none;
+        }
+      
+      .searchicon{
+      width: 30px;
+      height: auto;
+      vertical-align: middle;
+      padding-left: 10%;
+  
+      }
+      .menuicon{
+      width: 30px;
+      height: auto;
+      vertical-align: middle;
+      margin-left: 10px;
+      }
+    }
+  }
+  .frame1{
+    width: 100%;
+    padding:100px 20px;
+    position: relative;
+    
+    .para-1{
+      width:100%;
+      font-size: 28px;
+      display: inline-block;
+      margin-right: 0px;
+      position: relative;
+      margin-top: 40px;
+    }
+    .banner1{
+      width: 100%;
+      height: auto;
+      padding: 0px;
+      float: left;
+      margin-right: 0px;
+      margin-top:0px;
+      z-index: -1;
+      .bannerimg{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        object-fit: none;
+      }
+    }
+    .footer{
+      position: relative;
+      text-align: center;
+      margin-top: 100px;
+      .brandlogo-div{
+  
+        .blogo{
+          width: 40%;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .frame2{
+    background-color: black;
+    width: 100%;
+    padding:20px;
+    .banner-1{
+      position: absolute;
+      width: 80%;
+      margin-top: 190%;
+      left: 0%;
+      padding: 20px;
+      h1{
+        width: 100%;
+      }
+    }
+    .container{
+      display: block;
+      margin-top: 0px;
+      .col-1{
+        width: 100%;
+        padding:0px;
+        .img-wrapper{
+          width: 100%;
+          height: auto;
+          img{
+            width: 100%;
+            height: auto;
+            object-fit: none;
+          }
+        }
+      }
+      .col-2{
+        width: 100%;
+        padding: 0px;
+        margin-top: 70%;
+        p{
+          font-size: 28px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .frame3{
+    padding:20px;
+    .grid-container{
+      display: block;
+      .col-1{
+        display: none;
+      }
+      .col-2{
+        width: 100%;
+        padding: 0px;
+        p{
+          font-size: 28px;
+          width: 100%;
+        }
+      }
+    }
+    .banner-1{
+      width: 100%;
+      position: relative;
+      margin-top: 0px;
+      margin-left: 0px;
+      left: 0px;
+      background-color: white;
+      padding: 0px;
+    }
+    .container{
+      margin-top: 50px;
+      display: block;
+      grid-template-columns: auto auto auto;
+      padding: 0px;
+      border-top: none;
+      .title-col{
+        width: 100%;
+      } 
+      .discription-col{
+        width: 100%;
+        p{
+          width: 100%;
+          font-size: 28px;
+          line-height: 28px;
+        }
+        ul{
+          list-style-type: "+   ";
+          font-size: 28px;
+        }
+      } 
+    }
+  }
+  .frame4{
+    padding:20px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    p{
+      width: 50px;
+      padding: 50px;
+    }
+    .slide-number{
+      h1{
+        margin-left: 0px;
+        z-index: 100;
+      }
+    }
+    .slider{
+      .container{
+        .slide-text{
+          width: 100%;
+          position: absolute;
+          margin-top: 5.5%;
+          margin-left: 0.5%;
+        }
+        .slide-img-wrapper{
+          margin-left: 0px;
+          .slide-img{
+            width: 95%;
+            height: auto;
+            padding: 18px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  .frame5{
+    padding:20px;
+    padding-bottom: 100px;
+    .sliderBtnN{
+      margin-top: 8.5%;
+      margin-left:50%;
+    }
+    .sliderBtnP{
+      margin-top: 70%;
+      margin-left:38%;
+    }
+    .slide-content{
+      width: 100%;
+      padding: 50px;
+      margin-left: 0px;
+      margin-right: 0px;
+      text-align: center;
+      .slider{
+        padding: 0px;
+      }
+      .container{
+        .text{
+          width: 100%;
+          padding: 0px;
+        }
+      }
+    }
+    .ss1{display: none;}
+    .ss2{display: none;}
+    .ss3{display: none;}
+    .ss4{display: none;}
+    .ss5{display: none;}
+    .ss6{display: none;}
+  }
+  .frame7{
+    width: 100%;
+    background-color: rgb(218, 204, 204);
+    padding: 20px;
+    hr{
+      border: 1px solid black;
+    }
+    .grid-container{
+      display: block;
+      margin-bottom: 50px;
+      .col{
+        width: 100%;
+        padding: 0px;
+        .hide-show-tab{
+          width: 100%;
+          font-size: 25px;
+          font-weight: 400;
+        }
+        .card{
+          margin-top: 50px;
+          margin-bottom: 0px;
+          width: 65%;
+          cursor: pointer;
+          .deal-span{
+            font-size: 18px;
+            width: fit-content;
+            position: absolute;
+            margin-top: -30px;
+            margin-left: 55%;
+            padding: 5px;
+            border-radius: 5px;
+          }
+          .time-span{
+            color:  rgb(146, 146, 146);
+            border-radius: 5px;
+            border: 0.5px solid rgb(146, 146, 146);
+            padding: 5px;
+            width: fit-content;
+            font-size: 12px;
+          }
+          .price-span{
+            position: absolute;
+            margin-left: 50%;
+            margin-top: 0px;
+          }
+          .offer-span{margin-top: 20px;}
+          .detail-span{width: 80%; color:  rgb(146, 146, 146);}
+          .check-span{
+            position: absolute;
+            margin-top: -18%;
+            margin-left: -16%;
+            color: black;
+          }
+        }
+        .try-span{
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+  .frame8{
+    padding:20px;
+    .grid-container{
+      display: block;
+      .col-1{
+        display: none;
+      }
+      .col-2{
+        width: 100%;
+        padding: 0px;
+        p{
+          font-size: 28px;
+          width: 400px;
+        }
+      }
+    }
+    .banner-1{
+      width: 400px;
+      position: relative;
+      margin-top: 0px;
+      left: 0%;
+      background-color: white;
+      padding: 0px;
+    }
+    .container{
+      display: block;
+     .content{
+        padding: 0px;
+        padding-bottom: 80px;
+        display: block;
+        .card{
+          background-color: rgb(255, 255, 255);
+          width: 300px;
+          height: fit-content;
+          padding: 30px;
+          position: absolute;
+          margin-left: 20%;
+          margin-top: 55%;
+          z-index: 100;
+        }
+        img{
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          background-color: none;
+        }
+      }
+    }
+  }
+  .frame9{
+    background-color: black;
+    color: white;
+    .grid-container{
+      display: block;
+      .col-1{
+        padding: 20px;
+        border-bottom: none;
+        p{
+          color: rgb(128, 128, 128);
+          width: 100%;
+        }
+      }
+      .col-2{
+        text-align: center;
+        padding: 20px;
+        p{
+          padding:30px;
+          border: 1px solid rgb(70, 70, 70);
+          margin: 0px;
+        }
+      }
+      .col-3{
+        padding: 100px 50px;
+        border-bottom: 1px solid rgb(70, 70, 70);
+        text-align: center;
+      }
+    }
+    .footer{
+      padding: 20px;
+      .footer-text{
+        width: 100%;
+        padding: 30px;
+      }
+      .footer-nav-bar{
+        position: relative;
+        margin-top: 0px;
+        span{
+          padding: 10px;
+        }
+      }
+    }  
   }
 }
